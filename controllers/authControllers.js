@@ -207,7 +207,7 @@ exports.login = async (req, res) => {
     // existing response
     res.status(200).json({
       status: true,
-      message: "logged in successful",
+      message: "Logged in successful",
       token,
       data: { ...rest },
       role,
