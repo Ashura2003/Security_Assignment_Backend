@@ -307,8 +307,6 @@ exports.forgotPassword = async (req, res) => {
 };
 
 exports.resetPassword = async (req, res) => {
-  console.log(req.body);
-
   const { phone, otp, password } = req.body;
 
   if (!phone || !otp || !password) {
