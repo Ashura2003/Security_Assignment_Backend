@@ -100,6 +100,14 @@ const userSchema = new mongoose.Schema({
     type: Date, // Track the last time the password was changed
     default: null,
   },
+  resetPasswordOTP:{
+    type: Number,
+    default: null
+  },
+  resetPasswordExpires: {
+    type: Date,
+    default: null
+  }
 });
 
 // Add a virtual field to check if the user is currently locked

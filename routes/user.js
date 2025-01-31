@@ -13,6 +13,7 @@ router.get('/profile/me',authenticate, restrict(["patient"]), getUserProfile);
 router.get('/appointments/my-appointments',authenticate, restrict(["patient"]), getMyAppointments);
 
 
+
 module.exports = router;
 
 // authenticate, restrict(["admin"]),
