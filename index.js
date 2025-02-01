@@ -31,12 +31,12 @@ app.use(express.json());
 //session middleware
 app.use(
   session({
-    secret: "your_secret_key", // Replace with a strong secret
+    secret: "your_secret_key", =
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: false, // Set to true in production when using HTTPS
-      httpOnly: true, // Ensures the cookie is sent only over HTTP(S), not accessible via JavaScript
+      secure: false, 
+      httpOnly: true, 
       maxAge: 1000 * 60 * 60 * 24, // 1 day
     },
   })
