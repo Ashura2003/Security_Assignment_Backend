@@ -6,7 +6,6 @@ const createError = require("../utils/appError");
 const Admin = require("../models/AdminSchema");
 const sendOtp = require("../utils/sendOtp");
 
-
 // Generate JWT token
 const generateToken = (user) => {
   return jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET, {
