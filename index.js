@@ -31,7 +31,7 @@ app.use(express.json());
 //session middleware
 app.use(
   session({
-    secret: "your_secret_key", =
+    secret: "your_secret_key", 
     resave: false,
     saveUninitialized: false,
     cookie: {
